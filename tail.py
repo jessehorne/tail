@@ -48,9 +48,11 @@ else:
 			arg = int(sys.argv[2])
 			splitted = v.split("\n")
 
+			# if the integer is bigger than the number of lines in the file
 			if arg > len(splitted):
 				print "\n".join(splitted[:])
 			else:
 				print "\n".join(splitted[len(splitted)-arg:])
 		else:
-			print v
+			splitted = v.split("\n")
+			print "\n".join(splitted[len(splitted)-10:])
