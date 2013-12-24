@@ -53,6 +53,6 @@ else:
 				print "\n".join(splitted[:])
 			else:
 				print "\n".join(splitted[len(splitted)-arg:])
-		else:
+		else: # if no options are given, only a filename
 			splitted = v.split("\n")
 			print "\n".join(splitted[len(splitted)-10:])
